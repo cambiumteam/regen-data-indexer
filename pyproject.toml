@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "Data indexing service"
+version = "0.1.0"
+description = "Data indexer for Regen Ledger data."
+authors = ["Paul Weidner <paul.weidner@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rdflib = "^6.1.1"
+uvicorn = "^0.17.6"
+pydantic = "^2.6.1"
+pydantic-settings = "^2.1.0"
+websockets = "^10.3"
+asgi-lifespan = "^1.0.1"
+requests = "^2.31.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+pytest-watch = "^4.2.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
